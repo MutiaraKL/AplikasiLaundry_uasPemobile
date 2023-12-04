@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/kiloanLayout"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PaymentFragment">
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Pembayaran"
+            android:textSize="24dp"
+            android:drawableLeft="@drawable/baseline_arrow_back_ios_24"
+            android:onClick="kembali"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ubahKartu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="36dp"
+            android:fontFamily="@font/poppins"
+            android:text="Ubah Kartu"
+            android:textColor="@color/green"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/judul" />
+
+        <TextView
+            android:id="@+id/kartu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/poppins"
+            android:text="Kartu Saya"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/judul" />
+
+        <ImageView
+            android:id="@+id/imgKartu"
+            android:layout_width="360dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/credit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kartu" />
+
+        <TextView
+            android:id="@+id/metodeBayar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/poppins"
+            android:text="Metode Pembayaran Lain"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgKartu" />
+
+        <RadioGroup
+            android:id="@+id/pembayaran"
+            android:layout_width="340dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/metodeBayar">
+
+            <!-- RadioButton di dalam RadioGroup -->
+            <RadioButton
+                android:id="@+id/radioKartuKredit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="\tKartu Kredit/Debit Baru"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/debit2"/>
+
+            <RadioButton
+                android:id="@+id/radioQRIS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="\tQRIS"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/qris2"/>
+
+            <RadioButton
+                android:id="@+id/radioDana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="\tDana"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/dana2"/>
+
+            <RadioButton
+                android:id="@+id/radioGopay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="\tGopay"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/gopay2"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnLanjut"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:onClick="ringkasan"
+            android:text="Lanjut"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins"
+            app:layout_constraintTop_toBottomOf="@+id/pembayaran"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

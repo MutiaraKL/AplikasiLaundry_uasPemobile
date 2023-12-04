@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/navigation/nav_graph.xml -->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.golaundry.HomeFragment"
+        android:label="Home Fragment"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/kiloanFragment"
+        android:name="com.example.golaundry.KiloanFragment"
+        android:label="Kiloan Fragment"
+        tools:layout="@layout/fragment_kiloan" />
+
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.golaundry.PaymentFragment"
+        android:label="Payment Fragment"
+        tools:layout="@layout/fragment_payment" />
+
+    <fragment
+        android:id="@+id/konfirmasiFragment"
+        android:name="com.example.golaundry.KonfirmasiFragment"
+        android:label="Konfirmasi Fragment"
+        tools:layout="@layout/fragment_konfirmasi" />
+
+    <fragment
+        android:id="@+id/pesananFragment"
+        android:name="com.example.golaundry.PesananFragment"
+        android:label="Pesanan Fragment"
+        tools:layout="@layout/fragment_pesanan" />
+
+    <action
+        android:id="@+id/action_homeFragment_to_kiloanFragment"
+        app:destination="@id/kiloanFragment" />
+
+    <action
+        android:id="@+id/action_kiloanFragment_to_paymentFragment"
+        app:destination="@id/paymentFragment" />
+
+    <action
+        android:id="@+id/action_paymentFragment_to_kiloanFragment"
+        app:destination="@id/kiloanFragment" />
+
+    <action
+        android:id="@+id/action_paymentFragment_to_konfirmasiFragment"
+        app:destination="@id/konfirmasiFragment" />
+
+    <action
+        android:id="@+id/action_konfirmasiFragment_to_pesananFragment"
+        app:destination="@id/pesananFragment" />
+</navigation>

@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GoLaundry" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/blue3</item>
+        <item name="colorPrimaryVariant">@color/blue3</item>
+        <item name="android:statusBarColor">@color/blue3</item>
+    </style>
+
+    <style name="Theme.GoLaundry" parent="Base.Theme.GoLaundry" />
+    <style name="Theme.GoLaundry.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.GoLaundry.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.GoLaundry.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SelectorNavText" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/blue3</item>
+    </style>
+
+</resources>

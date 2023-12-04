@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">GoLaundry</string>
+    <string name="load_judul">Beragam Layanan</string>
+    <string name="load_isi">Cepat dan praktis dalam pemesanan order layanan untuk anda dan keluarga</string>
+    <string name="promo">Promo \n Desember</string>
+    <string name="promo_teks">Nyuci 5 Kilo Gratis Setrika 2 Kilo \n Nyuci 5 Sepatu Gratis Nyuci 1 Sepatu</string>
+
+    <string name="title_nav">NavigasiActivity</string>
+    <string name="open_nav">Open navigation drawer</string>
+    <string name="close_nav">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!---item_row_service-->
+    <string name="title_service">Judul Service</string>
+    <string name="desc_service">Deskripsi Service</string>
+
+    <string-array name="data_title">
+        <item>Bagaimana cara memesan cucian?</item>
+        <item>Bagaimana cara membatalkan cucian?</item>
+        <item>Bagaimana cara menghubungi kurir?</item>
+    </string-array>
+
+    <string-array name="data_desc">
+        <item>1. Silakan klik jenis cucian, kemudian pilih berat cucian.
+            \n2. Pilih jenis paket laundry.
+            \n3. Pilih memakai jasa antar atau tidak.
+            \n4. Pilih jenis pembayaran.
+            \n5. Konfirmasi pembayaran.</item>
+        <item>1. Pilih menu pesanan.
+            \n2. Klik opsi batalkan pesanan.
+            \n3. Tunggu permintaan dikonfirmasi.</item>
+        <item>Hubungi nomor kurir yang tersedia saat pesanan sudah dikonfirmasi akan dijemput/diantar.</item>
+    </string-array>
+
+    <string name="about">Tentang Kami</string>
+    <string name="about2">\tGoLaundry adalah aplikasi yang diciptakan untuk memudahkan para pelanggan
+    dalam melakukan pemesanan untuk cucian di laundry kami. Aplikasi ini ditujukan agar pelanggan
+    dapat senantiasa puas dengan layanan kami.
+    \n\n\t Kami menyediakan jasa antar jemput cucian bagi pelanggan yang tidak sempat atau tidak bisa
+    mengantarkan cucian ke laundry kami. Kami juga menyediakan paket cuci kering, cuci setrika,
+    maupun hanya paket setrika saja.
+    \n\n\t Kami menyediakan pelayanan untuk laundry kiloan, satuan, sepatu, bedcover, karpet, dan helm.</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+
+</resources>
